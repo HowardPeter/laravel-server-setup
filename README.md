@@ -42,11 +42,7 @@ docker-compose run --rm composer create-project --prefer-dist laravel/laravel:8.
 ```
 
 ### 3️⃣ Configure the `.env` File
-Copy the default Laravel `.env` file and update the database settings:
-```sh
-cp src/.env.example src/.env
-```
-Edit `.env` to match the MySQL configuration:
+Edit the default Laravel `.env` file in `./src/.env` to match the MySQL configuration:
 ```env
 DB_CONNECTION=mysql
 DB_HOST=mysql
@@ -57,9 +53,9 @@ DB_PASSWORD=secret
 ```
 
 ### 4️⃣ Start the Project
-Build and start all services:
+Build and start server:
 ```sh
-docker-compose up --build -d
+docker-compose up --build -d server
 ```
 Once completed, visit **http://localhost:8000** to check the application.
 
