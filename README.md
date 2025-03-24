@@ -35,7 +35,7 @@ First, install **Docker** and **Docker Compose** on your system.
 git clone https://github.com/HowardPeter/laravel-server-setup.git
 ```
 
-Since the `src/` directory is ignored in `.gitignore`, you first need to create a `src/` folder in root level.
+Since the `src/` directory is ignored in `.gitignore`, you first need to create a `src/` folder in the root folder level. <br>
 After that, create a fresh Laravel installation after cloning the repository.
 ```sh
 docker-compose run --rm composer create-project --prefer-dist laravel/laravel:8.0 .
